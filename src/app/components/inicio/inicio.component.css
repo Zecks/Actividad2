@@ -1,0 +1,48 @@
+/* Estilo general para el contenedor */
+.inicio-container {
+  background-image: url('https://plus.unsplash.com/premium_photo-1661628984416-946603207cfc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFib3JhdG9yaW98ZW58MHx8MHx8fDA%3D'); /* Imagen de fondo desde un enlace */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Estilo para el título */
+.titulo {
+  font-size: 3rem;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Contenedor de video */
+.video-container {
+  margin: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la descripción */
+.descripcion {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+  padding: 20px;
+  border-radius: 10px;
+}
