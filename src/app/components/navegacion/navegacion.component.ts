@@ -29,12 +29,12 @@ export class NavegacionComponent implements OnInit {
         items: [  // Submenú
           {
             label: 'Registro',
-            route: '/pacientes/registro',
+            route: '/registro',
             icon: 'pi pi-pencil'
           },
           {
             label: 'Consulta',
-            route: '/pacientes/consulta',
+            route: '/consulta',
             icon: 'pi pi-search'
           }
         ]

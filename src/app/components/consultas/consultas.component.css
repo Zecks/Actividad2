@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #75b1e2; /* Fondo suave de color gris claro */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Título de la página o sección */
+  h2 {
+    color: #108ff7; /* Verde para títulos */
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de la tabla */
+  table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+    background-color: #fff; /* Fondo blanco para la tabla */
+    border-radius: 10px; /* Bordes redondeados para un toque limpio */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  /* Estilo de las celdas y encabezados */
+  th, td {
+    padding: 15px 25px;
+    text-align: left;
+    border: 2px solid #80deea; /* Bordes en celeste claro */
+    font-size: 16px; /* Aumentar tamaño de la fuente */
+  }
+  
+  /* Encabezado de la tabla */
+  th {
+    background-color: #00796b; /* Verde oscuro */
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    font-size: 18px; /* Fuente más grande */
+    text-transform: uppercase; /* Mayúsculas */
+  }
+  
+  /* Celdas */
+  td {
+    background-color: #f9f9f9; /* Fondo suave para las celdas */
+    font-size: 16px; /* Fuente más grande */
+  }
+  
+  /* Estilo para filas alternas */
+  tr:nth-child(even) {
+    background-color: #f1f1f1; /* Fondo más claro para filas alternas */
+  }
+  
+  /* Hover sobre filas */
+  tr:hover {
+    background-color: #e0f2f1; /* Resaltado al pasar el mouse, celeste claro */
+  }
+  
+  /* Input de búsqueda */
+  input[type="text"] {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #80deea; /* Borde celeste claro */
+    border-radius: 5px;
+    width: 20%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Cambio de borde al hacer foco en el input */
+  input[type="text"]:focus {
+    border-color: #00796b; /* Verde cuando está enfocado */
+    outline: none;
+  }
+  
+  /* Estilo para el botón de búsqueda */
+  button {
+    background-color: #00897b; /* Verde para el botón */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  /* Hover del botón de búsqueda */
+  button:hover {
+    background-color: #00796b; /* Cambio de color cuando se pasa el mouse */
+  }
+  
+  /* Estilo de la etiqueta de "Solicitudes" */
+  label {
+    font-size: 18px;
+    color: #00796b; /* Verde para las etiquetas */
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Contenedor del input y botón de búsqueda */
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Estilo para el botón de restablecer */
+button.reset {
+    background-color: #f44336; /* Rojo para el botón de restablecer */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  /* Hover del botón de restablecer */
+  button.reset:hover {
+    background-color: #d32f2f; /* Cambio de color cuando se pasa el mouse */
+  }
+  
