@@ -1,1 +1,31 @@
-<p>solicitudes works!</p>
+<div class="card">
+    <h2>Busqueda de Solicitudes Medicas</h2>
+
+    <div class="search-container">
+        <label for="search"></label>
+        <input type="text" [(ngModel)]="globalFilter" id="search" placeholder="Ingrese nombre" />
+        <button (click)="onSearch()">Buscar</button>
+        <button class="reset" (click)="onReset()">Restablecer</button>
+    </div>
+      
+      
+      <p-table [value]="solicitudes" [globalFilterFields]="['nombre']" [rows]="10">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Estado de Solicitud</th>
+            <th>Fecha</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-solicitud>
+          <tr>
+            <td>{{ solicitud.id }}</td>
+            <td>{{ solicitud.nombre }}</td>
+            <td>{{ solicitud.estado }}</td>
+            <td>{{ solicitud.fecha }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+      
+</div>

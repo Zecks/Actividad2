@@ -9,12 +9,15 @@ import { SolicitudesComponent } from './components/solicitudes/solicitudes.compo
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ErrorComponent } from './components/error/error.component';
+import { TableModule } from 'primeng/table';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CabeceraComponent, NavegacionComponent, PieComponent, InicioComponent,
     PacientesComponent, SolicitudesComponent, AdministracionComponent, ContactoComponent,
-    ErrorComponent
+    ErrorComponent, TableModule, InputTextModule, FormsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
