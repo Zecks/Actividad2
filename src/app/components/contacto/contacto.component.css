@@ -1,0 +1,77 @@
+/* contacto.component.css */
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para la caja de información */
+  .contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  h2 {
+    color: #00796b; /* Verde oscuro */
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  ul li strong {
+    color: #00796b; /* Verde para los nombres */
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    h2 {
+      font-size: 28px;
+    }
+  }
+  
