@@ -1,26 +1,34 @@
 <div class="card">
-  <h2>Consulta de Examenes Medicos</h2>
+  <h2>Consulta de Exámenes Médicos</h2>
 
   <div class="search-container">
     <label for="search"></label>
-    <input type="text" [(ngModel)]="globalFilter" id="search" placeholder="Ingrese nombre" />
+    <input type="text" [(ngModel)]="globalFilter" id="search" placeholder="Ingrese nombre, apellido o cédula" />
     <button (click)="onSearch()">Buscar</button>
     <button class="reset" (click)="onReset()">Restablecer</button>
-</div>
+  </div>
 
   <p-table 
     [value]="solicitudes"
     [paginator]="true" 
     [rows]="5"
-    [globalFilterFields]="['nombre', 'estado']"
+    [globalFilterFields]="['nombre', 'nombre2', 'apellidoP', 'apellidoM', 'cedula']"
     [filters]="{'global': { value: globalFilter, matchMode: 'contains' }}">
-    
+
     <ng-template pTemplate="header">
       <tr>
-        <th pSortableColumn="id">Cedula <p-sortIcon field="id"></p-sortIcon></th>
+        <th pSortableColumn="cedula">Cédula <p-sortIcon field="cedula"></p-sortIcon></th>
         <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre"></p-sortIcon></th>
-        <th pSortableColumn="estado">Apellidp <p-sortIcon field="estado"></p-sortIcon></th>
+        <th pSortableColumn="nombre2">Segundo Nombre <p-sortIcon field="nombre2"></p-sortIcon></th>
+        <th pSortableColumn="apellidoP">Apellido Paterno <p-sortIcon field="apellidoP"></p-sortIcon></th>
+        <th pSortableColumn="apellidoM">Apellido Materno <p-sortIcon field="apellidoM"></p-sortIcon></th>
         <th pSortableColumn="fecha">Fecha <p-sortIcon field="fecha"></p-sortIcon></th>
+        <th pSortableColumn="direccion">Dirección <p-sortIcon field="direccion"></p-sortIcon></th>
+        <th pSortableColumn="email">Email <p-sortIcon field="email"></p-sortIcon></th>
+        <th pSortableColumn="telefono">Teléfono <p-sortIcon field="telefono"></p-sortIcon></th>
+        <th pSortableColumn="celular">Celular <p-sortIcon field="celular"></p-sortIcon></th>
+        <th pSortableColumn="tipoIdentificador">Tipo Identificador <p-sortIcon field="tipoIdentificador"></p-sortIcon></th>
+        <th pSortableColumn="idPaciente">ID Paciente <p-sortIcon field="idPaciente"></p-sortIcon></th>
       </tr>
     </ng-template>
 
@@ -28,8 +36,16 @@
       <tr>
         <td>{{ solicitud.cedula }}</td>
         <td>{{ solicitud.nombre }}</td>
-        <td>{{ solicitud.apellido }}</td>
-        <td>{{ solicitud.fecha }}</td>
+        <td>{{ solicitud.nombre2 }}</td>
+        <td>{{ solicitud.apellidoP }}</td>
+        <td>{{ solicitud.apellidoM }}</td>
+        <td>{{ solicitud.fecha}}</td>
+        <td>{{ solicitud.direccion }}</td>
+        <td>{{ solicitud.email }}</td>
+        <td>{{ solicitud.telefono }}</td>
+        <td>{{ solicitud.celular }}</td>
+        <td>{{ solicitud.tipoIdentificador }}</td>
+        <td>{{ solicitud.idPaciente }}</td>
       </tr>
     </ng-template>
   </p-table>

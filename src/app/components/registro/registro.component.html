@@ -13,10 +13,54 @@
       </div>
   
       <div class="p-field">
-        <label for="apellido">Apellido:</label>
-        <input id="apellido" type="text" pInputText [(ngModel)]="nuevoPaciente.apellido" name="apellido" required />
+        <label for="nombre2">Nombre 2:</label>
+        <input id="nombre2" type="text" pInputText [(ngModel)]="nuevoPaciente.nombre2" name="nombre2" required />
       </div>
   
+      <div class="p-field">
+        <label for="apellidoP">Apellido Paterno:</label>
+        <input id="apellidoP" type="text" pInputText [(ngModel)]="nuevoPaciente.apellidoP" name="apellidoP" required />
+      </div>
+
+      <div class="p-field">
+        <label for="apellidoM">Apellido Materno:</label>
+        <input id="apellidoM" type="text" pInputText [(ngModel)]="nuevoPaciente.apellidoM" name="apellidoM" required />
+      </div>
+
+      <div class="p-field">
+        <label for="direccion">Dirección:</label>
+        <input id="direccion" type="text" pInputText [(ngModel)]="nuevoPaciente.direccion" name="direccion" required />
+      </div>
+  
+      <div class="p-field">
+        <label for="email">Correo Electrónico:</label>
+        <input id="email" type="email" pInputText [(ngModel)]="nuevoPaciente.email" name="email" required />
+      </div>
+
+      <div class="p-field">
+        <label for="telefono">Teléfono:</label>
+        <input id="telefono" type="text" pInputText [(ngModel)]="nuevoPaciente.telefono" name="telefono" required />
+      </div>
+
+      <div class="p-field">
+        <label for="celular">Celular:</label>
+        <input id="celular" type="text" pInputText [(ngModel)]="nuevoPaciente.celular" name="celular" required />
+      </div>
+
+      <div class="p-field">
+        <label for="tipoIdentificador">Tipo de Identificador:</label>
+        <select id="tipoIdentificador" pInputText [(ngModel)]="nuevoPaciente.tipoIdentificador" name="tipoIdentificador" required>
+          <option value="1">Identificador 1</option>
+          <option value="2">Identificador 2</option>
+        </select>
+      </div>
+
+      <!-- Se puede generar el idPaciente automáticamente o de alguna otra forma, dependiendo de los requisitos -->
+      <div class="p-field">
+        <label for="idPaciente">ID Paciente (opcional):</label>
+        <input id="idPaciente" type="text" pInputText [(ngModel)]="nuevoPaciente.idPaciente" name="idPaciente" />
+      </div>
+
       <div class="p-field">
         <label for="fecha">Fecha de Registro:</label>
         <p-calendar id="fecha" [(ngModel)]="nuevoPaciente.fecha" name="fecha" [showIcon]="true" required></p-calendar>
@@ -28,6 +72,4 @@
         Cancelar
       </button>
     </form>
-  </div>
-  
-  
+</div>
