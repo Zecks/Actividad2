@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 
 interface Solicitud {
@@ -11,7 +12,7 @@ interface Solicitud {
 
 @Component({
   selector: 'app-solicitudes',
-  imports: [TableModule, FormsModule],
+  imports: [TableModule, FormsModule,InputTextModule],
   templateUrl: './solicitudes.component.html',
   styleUrl: './solicitudes.component.css'
 })

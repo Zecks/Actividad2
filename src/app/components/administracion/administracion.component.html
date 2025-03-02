@@ -1,31 +1,36 @@
 <div class="card">
-    <h2>Busqueda de Examenes Medicos</h2>
+  <h2>Consulta de Examenes Medicos</h2>
 
-    <div class="search-container">
-        <label for="search"></label>
-        <input type="text" [(ngModel)]="globalFilter" id="search" placeholder="Ingrese nombre" />
-        <button (click)="onSearch()">Buscar</button>
-        <button class="reset" (click)="onReset()">Restablecer</button>
-    </div>
-      
-      
-      <p-table [value]="solicitudes" [globalFilterFields]="['nombre']" [rows]="10">
-        <ng-template pTemplate="header">
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Estado de Solicitud</th>
-            <th>Fecha</th>
-          </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-solicitud>
-          <tr>
-            <td>{{ solicitud.id }}</td>
-            <td>{{ solicitud.nombre }}</td>
-            <td>{{ solicitud.estado }}</td>
-            <td>{{ solicitud.fecha }}</td>
-          </tr>
-        </ng-template>
-      </p-table>
-      
+  <div class="search-container">
+    <label for="search"></label>
+    <input type="text" [(ngModel)]="globalFilter" id="search" placeholder="Ingrese nombre" />
+    <button (click)="onSearch()">Buscar</button>
+    <button class="reset" (click)="onReset()">Restablecer</button>
+</div>
+
+  <p-table 
+    [value]="solicitudes"
+    [paginator]="true" 
+    [rows]="5"
+    [globalFilterFields]="['nombre', 'estado']"
+    [filters]="{'global': { value: globalFilter, matchMode: 'contains' }}">
+    
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="id">Cedula <p-sortIcon field="id"></p-sortIcon></th>
+        <th pSortableColumn="nombre">Nombre <p-sortIcon field="nombre"></p-sortIcon></th>
+        <th pSortableColumn="estado">Estado del examen <p-sortIcon field="estado"></p-sortIcon></th>
+        <th pSortableColumn="fecha">Fecha <p-sortIcon field="fecha"></p-sortIcon></th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-solicitud>
+      <tr>
+        <td>{{ solicitud.id }}</td>
+        <td>{{ solicitud.nombre }}</td>
+        <td>{{ solicitud.estado }}</td>
+        <td>{{ solicitud.fecha }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
 </div>
