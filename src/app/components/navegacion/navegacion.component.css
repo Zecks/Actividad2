@@ -1,24 +1,33 @@
-nav.menu_principal {
-    border-top: #AAA 2px solid;
-    border-bottom: #AAA 2px solid;
-    background-color: #EEE;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6d8aa3; /* Azul claro médico */
+  padding: 30px; /* Aumentado para mayor presencia */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ajustado para que no sea tan pequeño */
+  margin: auto;
 }
 
-nav.menu_principal ul {
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-    text-align: center;
+.p-menubar {
+  background-color: #007bff !important; /* Azul médico */
+  border-radius: 8px;
+  padding: 15px; /* Aumentado para más espacio */
+  width: 100%;
+  max-width: 900px; /* Se agranda para que no sea muy compacto */
 }
 
-nav.menu_principal ul > li{
-    display:inline-block;
-    padding:15px;
-    height:30px;
-    line-height:30px;
+.p-menubar-item-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px; /* Aumentado para mejor legibilidad */
+  color: rgb(22, 20, 20) !important;
+  font-weight: bold;
+  padding: 12px 20px;
 }
 
-nav.menu_principal ul > li > a {
-    text-decoration: none;
-    color: black;
+.p-menubar-item-link:hover {
+  background-color: #0056b3 !important; /* Azul más oscuro */
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
