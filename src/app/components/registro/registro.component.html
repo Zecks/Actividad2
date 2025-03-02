@@ -1,1 +1,33 @@
-<p>registro works!</p>
+<div class="container">
+    <h2>Formulario de Registro de Pacientes</h2>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="cedula">Cédula:</label>
+        <input id="cedula" type="text" pInputText [(ngModel)]="nuevoPaciente.cedula" name="cedula" required />
+      </div>
+  
+      <div class="p-field">
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" pInputText [(ngModel)]="nuevoPaciente.nombre" name="nombre" required />
+      </div>
+  
+      <div class="p-field">
+        <label for="apellido">Apellido:</label>
+        <input id="apellido" type="text" pInputText [(ngModel)]="nuevoPaciente.apellido" name="apellido" required />
+      </div>
+  
+      <div class="p-field">
+        <label for="fecha">Fecha de Registro:</label>
+        <p-calendar id="fecha" [(ngModel)]="nuevoPaciente.fecha" name="fecha" [showIcon]="true" required></p-calendar>
+      </div>
+  
+      <button pButton type="submit" label="Ingresar" icon="pi pi-check" [disabled]="!formularioValido()">Crear Paciente</button>
+
+      <button pButton type="button" label="Cancelar" icon="pi pi-times" class="p-button-danger" (click)="cancelar()">
+        Cancelar
+      </button>
+    </form>
+  </div>
+  
+  

@@ -13,12 +13,14 @@ import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './components/registro/registro.component';
 import { ConsultasComponent } from './components/consultas/consultas.component';
+import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CabeceraComponent, NavegacionComponent, PieComponent, InicioComponent,
     SolicitudesComponent, AdministracionComponent, ContactoComponent, RegistroComponent, ConsultasComponent,
-    ErrorComponent, TableModule, InputTextModule, FormsModule
+    ErrorComponent, TableModule, InputTextModule, FormsModule, ButtonModule, CalendarModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

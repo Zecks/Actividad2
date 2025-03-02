@@ -1,0 +1,64 @@
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #00796b;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .p-field {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  input, .p-calendar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #80deea;
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .p-button-danger {
+    background-color: #d32f2f !important;  /* Rojo */
+    border: none;
+    margin-left: 1%;
+  }
+  
+  .p-button-danger:hover {
+    background-color: #b71c1c !important;  /* Rojo más oscuro */
+  }
+  
