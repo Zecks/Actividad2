@@ -45,7 +45,7 @@ export class NavegacionComponent implements OnInit {
         route: '/solicitudes'
       },
       {
-        label: 'Administración',
+        label: 'Examenes',
         icon: 'pi pi-cog',
         route: '/administracion'
       },

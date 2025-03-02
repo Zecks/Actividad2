@@ -9,13 +9,12 @@ import { SolicitudesComponent } from './components/solicitudes/solicitudes.compo
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ErrorComponent } from './components/error/error.component';
-import { ExamenesComponent } from './components/examenes/examenes.component';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CabeceraComponent, NavegacionComponent, PieComponent, InicioComponent,
     PacientesComponent, SolicitudesComponent, AdministracionComponent, ContactoComponent,
-    ExamenesComponent, ErrorComponent
+    ErrorComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
